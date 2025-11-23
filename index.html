@@ -1,32 +1,120 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rhodaris - Home</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Vladimir Smirnov — Product Manager</title>
+  <meta name="description" content="Portfolio and consulting of Vladimir Smirnov, Product Manager." />
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main>
-        <h1>Welcome to Rhodaris</h1>
-        <p>This is the home page.</p>
-    </main>
-    
-    <footer>
-        <p>&copy; 2025 Rhodaris. All rights reserved.</p>
-    </footer>
-    
-    <script src="assets/js/main.js"></script>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html">Vladimir Smirnov</a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="hero">
+    <div>
+      <h1>Product Manager focused on outcomes, not output.</h1>
+      <p>
+        I help teams turn messy problems into simple experiences —
+        combining product strategy, analytics, and execution.
+      </p>
+      <div class="badges">
+        <span class="badge">Product Strategy</span>
+        <span class="badge">Experimentation</span>
+        <span class="badge">Data-Informed Decisions</span>
+        <span class="badge">Roadmapping</span>
+        <span class="badge">Stakeholder Alignment</span>
+      </div>
+      <div class="actions">
+        <a class="btn btn-primary" href="projects.html">View case studies</a>
+        <a class="btn" href="contact.html">Let’s work together</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="featured">
+    <h2>Featured work</h2>
+    <div class="grid">
+      <article class="card">
+        <div class="meta">Case Study • Growth</div>
+        <h3>Improving activation in onboarding</h3>
+        <p>
+          Reduced time-to-value by redesigning the first-run experience
+          and validating with A/B tests.
+        </p>
+        <a class="small" href="projects.html">Read more →</a>
+      </article>
+
+      <article class="card">
+        <div class="meta">Case Study • Platform</div>
+        <h3>Self-serve analytics for clients</h3>
+        <p>
+          Built a scalable reporting layer that cut ad-hoc requests
+          and increased retention.
+        </p>
+        <a class="small" href="projects.html">Read more →</a>
+      </article>
+
+      <article class="card">
+        <div class="meta">Case Study • AI / ML</div>
+        <h3>Decision support using predictive models</h3>
+        <p>
+          Partnered with DS to ship a model-driven workflow with clear
+          product guardrails.
+        </p>
+        <a class="small" href="projects.html">Read more →</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>What I do</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>0 → 1 product discovery</h3>
+        <p>Define problem space, validate demand, and craft MVP scope.</p>
+      </div>
+      <div class="card">
+        <h3>1 → n scaling</h3>
+        <p>Systemize workflows, tighten feedback loops, and deliver reliably.</p>
+      </div>
+      <div class="card">
+        <h3>Data & experimentation</h3>
+        <p>Set up metrics, run tests, and connect insights to roadmap decisions.</p>
+      </div>
+      <div class="card">
+        <h3>Consulting</h3>
+        <p>Short, focused engagements to unblock product direction.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>© <span id="year"></span> Vladimir Smirnov</div>
+    <div class="small">
+      <a href="contact.html">Email</a> ·
+      <a href="#">LinkedIn</a> ·
+      <a href="#">GitHub</a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
