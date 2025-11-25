@@ -14,7 +14,7 @@ var klaroConfig = {
     en: {
       consentModal: {
         title: 'Cookie preferences',
-        description: 'We use cookies to improve your experience and analyze site traffic.',
+        description: 'We use cookies to improve your experience and analyze site traffic. You can choose which cookies to accept.',
       },
       googleAnalytics: {
         description: 'Google Analytics helps us understand how visitors use our website.',
@@ -27,6 +27,7 @@ var klaroConfig = {
   services: [
     {
       name: 'googleAnalytics',
+      title: 'Google Analytics',
       purposes: ['analytics'],
       cookies: [/^_ga/, /^_gid/, /^_gat/],
       required: false,
