@@ -10,6 +10,7 @@ var klaroConfig = {
   hideLearnMore: false,
   noticeAsModal: false,
   lang: 'en',
+  privacyPolicy: '/privacy-policy.html',
   translations: {
     en: {
       consentModal: {
@@ -22,6 +23,7 @@ var klaroConfig = {
       purposes: {
         analytics: 'Analytics',
       },
+      privacyPolicyUrl: '/privacy-policy.html',
     },
   },
   services: [
