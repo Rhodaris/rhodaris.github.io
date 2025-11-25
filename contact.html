@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MJD7XR5CE5"></script>
-  <script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MJD7XR5CE5" data-name="googleAnalytics"></script>
+  <script data-name="googleAnalytics">
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
@@ -14,6 +14,10 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Contact — Vladimir Smirnov</title>
   <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- Klaro (cookie consent) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/klaro@0.7.21/dist/klaro.min.css">
+  <script defer src="assets/js/klaro-config.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/klaro@0.7.21/dist/klaro-no-css.min.js"></script>
 </head>
 <body>
 
@@ -70,11 +74,11 @@
 
 <footer class="footer">
   <div class="container footer-inner">
-    <div>© <span id="year"></span> Vladimir Smirnov</div>
+    <div>© <span id="year"></span> Vladimir Smirnov · KVK: 95530436</div>
     <div class="small">
-      <a href="contact.html">Email</a> ·
-      <a href="#">LinkedIn</a> ·
-      <a href="#">GitHub</a>
+      <a href="mailto:info@rhodaris.com">Email</a> ·
+      <a href="https://linkedin.com/in/v--smirnov" target="_blank" rel="noopener noreferrer">LinkedIn</a> ·
+      <a href="https://github.com/Rhodaris" target="_blank" rel="noopener noreferrer">GitHub</a>
     </div>
   </div>
 </footer>
